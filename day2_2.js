@@ -1,3 +1,4 @@
+//Write a function which filter users who has  scoresGreaterThan85
 function scoresGreaterThan85(){
     let filteredUsers = users.filter((e)=>{
         return e.scores > 85;
@@ -5,6 +6,7 @@ function scoresGreaterThan85(){
     console.log(filteredUsers)
 }
 
+//Write a function which addUser  to the user array only if the user does not exist.
 function addUser(user){
     let x = users.find(student =>student.name == user.name)
     if (x == undefined){
@@ -15,6 +17,7 @@ function addUser(user){
     console.log(users)
 }
 
+//Write a function which addUserSkill which can add skill to a user only if the user exist.
 function addUserSkill(skill){
     let x = users.find(student =>student.name == skill.name)
     if (x == undefined){
@@ -25,6 +28,7 @@ function addUserSkill(skill){
     console.log(x)
 }
 
+//Write a function which editUser if the user exist in the users array. 
 function editUser(info){
     let x = users.find(student => student.name == info.name)
     if (x == undefined){
